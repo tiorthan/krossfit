@@ -12,7 +12,7 @@ class KrossfitSpec extends Specification {
     String expectedValue
 
     def setup() {
-        testClass = Krossfit.wrapSuspendFunctions(new TestClassWithSuspendMethods({ callValue ->
+        testClass = Krossfit.wrapFunctionCalls(new TestClassWithSuspendMethods({ callValue ->
             callBackCondition.evaluate {
                 assert callValue == expectedValue
             }
