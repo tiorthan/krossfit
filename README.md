@@ -1,5 +1,7 @@
-# krossfit
+# Krossfit
 Simplified blocking calls of Kotlin suspend functions from Groovy code.
+
+![Java CI](https://github.com/tiorthan/krossfit/workflows/Java%20CI/badge.svg)
 
 This little helper was written for the purpose of unit testing Kotlin code with the Spock test framework. It allows
 calling suspend functions that need to be tested from your Groovy code without having to provide a Continuation.
