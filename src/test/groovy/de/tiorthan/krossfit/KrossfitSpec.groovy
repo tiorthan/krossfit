@@ -1,6 +1,6 @@
-package de.wolkenfestung.krossfit
+package de.tiorthan.krossfit
 
-import de.wolkenfestung.krossfit.test.TestClassWithSuspendMethods
+import de.tiorthan.krossfit.test.TestClassWithSuspendMethods
 import kotlin.Unit
 import spock.lang.Specification
 import spock.util.concurrent.AsyncConditions

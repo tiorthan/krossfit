@@ -1,4 +1,4 @@
-package de.wolkenfestung.krossfit
+package de.tiorthan.krossfit
 
 import kotlinx.coroutines.runBlocking
 import kotlin.reflect.KCallable

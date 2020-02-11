@@ -1,4 +1,4 @@
-package de.wolkenfestung.krossfit
+package de.tiorthan.krossfit
 
 class Krossfit {
     static <T> T wrapFunctionCalls(T instance) {

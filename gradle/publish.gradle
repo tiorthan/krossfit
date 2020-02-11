@@ -1,0 +1,30 @@
+bintray {
+    user = bintrayUser
+    key = bintrayKey
+    pkg {
+        repo = 'krossfit'
+        name = project.group
+        version {
+            name = project.version
+            released = new Date()
+        }
+    }
+}
+
+publishing {
+    publications {
+        krossfit(MavenPublication) {
+            from components.java
+            pom {
+                name = 'Krossfit'
+                description = 'Call Kotlin suspend functions from gradle'
+                licenses {
+                    license {
+                        name = 'The Apache License, Version 2.0'
+                        url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+            }
+        }
+    }
+}

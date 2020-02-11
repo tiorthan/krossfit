@@ -1,9 +1,12 @@
 plugins {
     kotlin("jvm") version "1.3.61"
     id("groovy")
+    id("com.jfrog.bintray") version "1.8.4"
+    id("maven-publish")
+    id("org.jetbrains.dokka") version "0.10.0"
 }
 
-group = "de.wolkenfestung"
+group = "de.tiorthan.krossfit"
 version = "1.0.0"
 
 repositories {
@@ -38,4 +41,10 @@ tasks {
     compileTestGroovy {
         classpath += files(compileTestKotlin.get().destinationDir)
     }
+
+    javadoc {
+        isFailOnError = false
+    }
 }
+
+apply { from("gradle/publish.gradle") }

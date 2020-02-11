@@ -1,4 +1,4 @@
-package de.wolkenfestung.krossfit.test
+package de.tiorthan.krossfit.test
 
 import kotlinx.coroutines.delay
 
